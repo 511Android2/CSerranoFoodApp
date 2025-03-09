@@ -1,7 +1,9 @@
 package com.example.foodapp.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -25,9 +27,9 @@ fun AccountRow() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(70.dp)
-            .background(Color.White),
-        verticalAlignment = Alignment.CenterVertically
+            .height(70.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.Center
     ) {
         Icon(
             imageVector = Account_circle,
@@ -36,18 +38,17 @@ fun AccountRow() {
                 .size(50.dp)
                 .width(10.dp)
         )
+        Spacer(modifier = Modifier.width(2.dp))
         Text(
             text = "Hola, Carlos",
-            fontSize = 30.sp,
-
+            fontSize = 30.sp
         )
         Icon(
             imageVector = Logout,
             contentDescription = "Icono de salida de cuenta",
             modifier = Modifier
                 .padding(start = 105.dp)
-                .size(50.dp)
-
+                .size(60.dp)
         )
     }
 }

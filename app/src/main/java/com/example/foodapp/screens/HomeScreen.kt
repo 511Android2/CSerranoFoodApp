@@ -3,8 +3,10 @@ package com.example.foodapp.screens
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -16,7 +18,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.foodapp.components.NewCategoria
+import com.example.foodapp.components.NewRestaurante
 import com.example.foodapp.models.listaCategorias
+import com.example.foodapp.models.listaRestaurantes
 import com.example.foodapp.ui.theme.FoodAppTheme
 
 @Composable
@@ -37,10 +41,19 @@ fun HomeScreen(innerPadding:PaddingValues) {
                 NewCategoria(categorias = it)
             }
         }
+        Spacer(modifier = Modifier.height(10.dp))
         Text(
             text = "Nuestros Restaurantes",
             fontSize = 30.sp
         )
+        LazyRow(
+            modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            items(listaRestaurantes) {
+                NewRestaurante(restaurantes = it)
+            }
+        }
     }
 }
 
