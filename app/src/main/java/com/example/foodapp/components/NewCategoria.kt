@@ -32,8 +32,7 @@ import com.example.foodapp.ui.theme.FoodAppTheme
 @Composable
 fun NewCategoria(categorias: Categorias) {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Box(
             modifier = Modifier
