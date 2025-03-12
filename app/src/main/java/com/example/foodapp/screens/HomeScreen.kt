@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.foodapp.components.AccountRow
 import androidx.compose.material3.Text
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -36,7 +37,8 @@ fun HomeScreen(innerPadding:PaddingValues) {
         AccountRow()
         Text(
             text = "Nuestras Categorías",
-            fontSize = 30.sp
+            fontSize = 30.sp,
+            color = Color.White
         )
         LazyRow(
             modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
@@ -49,7 +51,8 @@ fun HomeScreen(innerPadding:PaddingValues) {
         Spacer(modifier = Modifier.height(10.dp))
         Text(
             text = "Nuestros Restaurantes",
-            fontSize = 30.sp
+            fontSize = 30.sp,
+            color = Color.White
         )
         LazyRow(
             modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
@@ -62,7 +65,8 @@ fun HomeScreen(innerPadding:PaddingValues) {
         Spacer(modifier = Modifier.height(10.dp))
         Text(
             text = "Nuestras Mejores Comidas",
-            fontSize = 30.sp
+            fontSize = 30.sp,
+            color = Color.White
         )
         LazyVerticalGrid(
             columns = GridCells.Fixed(2)

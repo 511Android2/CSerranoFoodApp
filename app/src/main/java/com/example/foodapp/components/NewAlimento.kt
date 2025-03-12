@@ -36,7 +36,8 @@ import com.example.foodapp.utils.StarFilled
 @Composable
 fun NewAlimento(alimentos: Alimentos) {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.padding(10.dp)
     ) {
         Box(
             contentAlignment = Alignment.Center,
