@@ -79,7 +79,7 @@ fun NewAlimento(alimentos: Alimentos) {
                 text = alimentos.title,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black
+                color = Color.White
             )
         }
     }

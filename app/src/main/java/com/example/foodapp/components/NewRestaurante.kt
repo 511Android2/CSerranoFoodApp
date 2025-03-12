@@ -56,7 +56,7 @@ fun NewRestaurante(restaurantes: Restaurantes) {
         Spacer(modifier = Modifier.height(8.dp))
         Text(
             text = restaurantes.title,
-            color = Color.Black,
+            color = Color.White,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center

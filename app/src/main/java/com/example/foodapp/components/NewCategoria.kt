@@ -50,7 +50,7 @@ fun NewCategoria(categorias: Categorias) {
         }
         Text(
             text = categorias.title,
-            color = Color.Black,
+            color = Color.White,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
